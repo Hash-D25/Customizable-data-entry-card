@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tableContainer glasseft">
+        <div class="headnbtn"><h1>Participants</h1>
+            <button class="" id="addParticipantBtn"><span>+</span>Add   Participant</button>
+        </div>
+        <table class="glasseft" id="participantsTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Confirmed</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here -->
+            </tbody>
+        </table>
+    </div>
+  
+    <div id="popup" class="popup-card glasseft">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Add Participant</h2>
+            <form id="participantForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="confirmed">Confirmed:</label>
+                <select id="confirmed" name="confirmed" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+<script src="script.js"></script>
+
+</body>
+
+</html>
