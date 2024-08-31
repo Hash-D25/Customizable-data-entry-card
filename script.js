@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    let serialNumber = 0;
+    let serialNumber = 1;
 
     
     //addbtn 
